@@ -1,0 +1,218 @@
+/* Scss Document */
+* {
+  font-family: 'Roboto', sans-serif; }
+
+.portfolio-box .portfolio-box-caption {
+  background-color: #59A67B; }
+
+.gallery-title {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px; }
+
+.gallery-title:after {
+  content: "";
+  position: absolute;
+  width: 7.5%;
+  left: 46.5%;
+  height: 45px; }
+
+.filter-button {
+  border-radius: 0%;
+  text-align: center;
+  color: #317A5A;
+  margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  text-transform: capitalize; }
+
+.filter-button:hover {
+  text-align: center;
+  color: #ffffff;
+  background-color: #317A5A; }
+
+.btn-default:active .filter-button:active {
+  background-color: #317A5A;
+  color: white; }
+
+.gallerynav {
+  width: 40%;
+  margin: 0 30%;
+  display: flex;
+  justify-content: space-around; }
+
+.port-image {
+  width: 100%; }
+
+#mig {
+  width: 100%;
+  display: flex;
+  flex-direction: row ltr;
+  margin-bottom: -100px; }
+
+.profilbilled {
+  width: 40%;
+  height: 300px;
+  margin-left: 10%; }
+  .profilbilled .portaet {
+    width: 70%;
+    margin: 0 20% 0 10%; }
+
+.biografi {
+  width: 50%;
+  height: 300px;
+  padding: 1%;
+  margin-right: 10%; }
+
+.service {
+  padding-bottom: 1rem; }
+
+.green {
+  color: #317A5A; }
+
+#parallax {
+  margin-top: -100; }
+
+.info {
+  height: 350px; }
+
+.tekst {
+  width: 80%;
+  padding-top: 60px;
+  margin: 0 10%; }
+
+.parallax {
+  /* The image used */
+  background-image: url("../img/kranse.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  /* Set a specific height */
+  min-height: 300px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.parallax1 {
+  /* The image used */
+  background-image: url("../img/pasta.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  /* Set a specific height */
+  min-height: 300px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.bog {
+  height: 200px;
+  margin: 8vh 5% 8vh 12%; }
+
+.bogtx {
+  margin-top: 8vh; }
+
+.bestil {
+  width: 80px;
+  font-size: 0.8em;
+  margin: 50px 15%;
+  padding: 6px 0;
+  text-transform: capitalize;
+  background-color: #317A5A;
+  color: white;
+  border-radius: 0;
+  font-family: 'Roboto', sans-serif; }
+
+.bestil:hover {
+  background-color: #77BE9F;
+  color: white; }
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer; }
+
+#texts {
+  position: absolute;
+  width: 70%;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: black;
+  background-color: white;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); }
+
+.lay {
+  width: 80%;
+  margin-left: 10%;
+  display: flex;
+  justify-content: space-around; }
+
+form {
+  width: 45%;
+  float: right; }
+
+input[type=text], select {
+  width: auto;
+  height: 30px;
+  font-size: 0.3em;
+  display: inline-block;
+  border: 1px solid #ccc; }
+
+input[type=email], select {
+  width: auto;
+  height: 30px;
+  font-size: 0.3em;
+  display: inline-block;
+  border: 1px solid #ccc; }
+
+input[type=submit] {
+  width: 40%;
+  height: 40px;
+  background-color: #317A5A;
+  color: white;
+  font-size: 0.4em;
+  padding: 4px 10px;
+  border-radius: 0;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer; }
+
+input[type=submit]:hover {
+  background-color: #77BE9F; }
+
+label {
+  font-size: 0.4em; }
+
+.formfoto {
+  width: 40%;
+  margin: 5%; }
+
+.close {
+  width: 6%;
+  height: 40px;
+  padding: 0;
+  top: 0;
+  margin-right: -20px; }
+
+.kontaktskrift h2 {
+  margin-bottom: 30px; }
+
+#map {
+  width: 100%;
+  height: 350px;
+  background-color: grey; }

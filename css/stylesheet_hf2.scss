@@ -1,0 +1,60 @@
+/* Scss Document */
+
+$brand-color: #317A5A;
+$hover-color: #135E31;//variable 
+@mixin rounded-corners ($myradius: 5px){ //mix in
+    border-radius: $myradius;
+    -webkit-border-radius: $myradius;}  
+$my-width: 200px;
+$my-font: 'Roboto', sans-serif;
+
+*{
+	font-family: 'Roboto', sans-serif;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+}
+//header start
+header.masthead{
+	background-image: url(../img/kokos.png);
+}
+
+header {
+	background-image: url(../img/overskrift.png);
+	background-size: cover;
+	background-repeat:no-repeat;
+	width: 100%;
+	
+	background-color: #CACACA;
+}
+.overskrift{
+	width: 80%;
+	height: auto;
+	transition-delay: 5s;
+	margin-bottom: 50px;
+}
+.logo{
+	width: 20%;
+	height: auto;
+}
+.btn-primary :hover{
+	background-color: black;
+}
+//header slut 
+
+
+
+//menu start 
+#mainNav .navbar-brand {
+    font-weight: 200;
+    text-transform: uppercase;
+    
+    font-family: 'Roboto', sans-serif;
+}
+#selected {
+	color: #5EAC31;
+}
+//menu slut
+
+//footer start 
+//footer slut 

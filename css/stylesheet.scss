@@ -1,0 +1,20 @@
+/* Scss Document */
+$brand-color: #1e6ea0; //variable 
+@mixin rounded-corners ($myradius: 5px){ //mix in
+    border-radius: $myradius;
+    -webkit-border-radius: $myradius;}  
+$my-width: 200px;
+
+*{
+	font-family: 'Roboto', sans-serif;
+}
+
+//forside start 
+.push-1-12-right {
+  margin-right: 8.33%; }
+
+.push-icon {
+	margin-left: 4.18%;
+}
+//forside slut 
+

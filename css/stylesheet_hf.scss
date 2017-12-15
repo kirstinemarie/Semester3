@@ -1,0 +1,58 @@
+/* Scss Document */
+
+$brand-color: #317A5A;
+$hover-color: #135E31;//variable 
+@mixin rounded-corners ($myradius: 5px){ //mix in
+    border-radius: $myradius;
+    -webkit-border-radius: $myradius;}  
+$my-width: 200px;
+$my-font: 'Roboto', sans-serif;
+
+*{
+	font-family: 'Roboto', sans-serif;
+}
+
+//header start
+header {
+	background-image: url(../img/overskrift.png);
+	background-size: cover;
+	background-repeat:no-repeat;
+	width: 100%;
+	height: 270px;
+	background-color: #CACACA;
+}
+
+.logo img{
+	width: 20%;
+	
+}
+
+//header slut 
+
+
+
+//menu start 
+nav ul{
+		float: right;
+		margin-right: 6%;
+	}
+	li {
+		display: inline-block;
+			a{
+				display: block;
+				text-decoration: none;
+				margin: 35px 12px;
+				padding-bottom: 3px;
+				
+				font-family: $my-font;
+				&:hover{
+					color: $hover-color;
+			}}}
+.selected {
+	border-bottom: 1px solid $brand-color;
+	color: $brand-color;
+}
+//menu slut
+
+//footer start 
+//footer slut 
