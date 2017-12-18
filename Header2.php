@@ -3,6 +3,7 @@ $fn = basename($_SERVER['PHP_SELF']);
 
 ?>
 
+
 	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="index2.php"><img class="logo" alt="Logo" src="img/logo.svg">Gitte Heidi</a>
@@ -18,10 +19,10 @@ $fn = basename($_SERVER['PHP_SELF']);
               <a class="nav-link js-scroll-trigger" id="<?=($fn=='Ommig.php')?' selected': '' ?>" href="Ommig.php">Om mig</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" id="<?=($fn=='udgivelser.php')?' selected': '' ?>" href="udgivelser.php">Udgivelser</a>
+              <a class="nav-link js-scroll-trigger" id="<?=($fn=='udgivelser.php')?' selected': '' ?>" href="udgivelser.php">Udgivelse</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger menulink<?=($fn=='kontakt.php')?' selected': '' ?>" href="kontakt.php">Kontakt</a>
+              <a class="nav-link js-scroll-trigger" id="<?=($fn=='kontakt.php')?' selected': '' ?>" href="kontakt.php">Kontakt</a>
             </li>
           </ul>
         </div>
@@ -32,12 +33,12 @@ $fn = basename($_SERVER['PHP_SELF']);
       <div class="container my-auto">
         <div class="row">
           <div class="col-lg-10 mx-auto">
-            
+           
 			  <img class="overskrift " alt="Madskribent" src="img/overskrift.svg">
             
           </div>
           <div class="col-lg-8 mx-auto">
-            <a class="btn btn-light btn-xl sr-button" href="kontakt.php">Kontakt</a>
+            <a class="konknap btn btn-light btn-xl sr-button" href="kontakt.php">Kontakt</a>
             
           </div>
         </div>

@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Madskribent & Foodstylist">
-<meta name="keywords" content="Madskribent, Foodstylist, Mad, Food, Kogebøger">
+<meta name="description" content="Madskribent & Foodstylist med fokus på udvikling af Madopskrifter, ernæring og mad styling">
+<meta name="keywords" content="Madskribent, Foodstylist, Mad, Food, Kogebøger, sundhed, opskrifter">
 <meta name="author" content="Gitte Heidi">
-
 <title>Gitte Heidi Madskribent & Foodstylist</title>
 	
+	<link rel="icon" href="img/green-logo-lille.png">
 	<!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	
@@ -20,7 +20,9 @@
 	
 	<!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
 	
@@ -28,6 +30,11 @@
 	<link rel="stylesheet" type="text/css" href="css/stylesheet_hf2.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
 
+	<style>
+		.konknap{
+			display: none;
+		}
+	</style>
 </head>
 
 <body>
@@ -48,8 +55,8 @@
           <div class="col-lg-6 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto kontaktskrift">
               <h2 class="section-heading ">Gitte Heidi Rasmussen</h2>
-            <p class="text-muted mb-0">We update dependencies to keep things fresh.
-				Our templates are updated regularly so they don't break.You have to make your websites with love these days.You have to make your websites with love these days</p>
+            <p class="text-muted mb-0">Madskribent & Foodstylist <br>  
+				CEO af Gh Garniture </p>
             
             </div>
           </div>
@@ -57,14 +64,14 @@
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-4x fa-phone green mb-3 sr-icons"></i>
-              <h3 class="mb-3">Up to Date</h3>
+              
               <p class="text-muted mb-0">+45 21 74 67 05</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-4x fa-envelope-o green mb-3 sr-icons"></i>
-              <h3 class="mb-3">Made with Love</h3>
+              
               <p class="text-muted mb-0"><a href="mailto:gh@ghgarniture.dk?Subject=Hej%20Gitte Heidi" target="_top">Gh@ghgarniture.dk</a></p>
             </div>
           </div>
@@ -292,6 +299,6 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
-	
+
 </body>
 </html>

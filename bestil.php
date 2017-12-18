@@ -2,7 +2,32 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Madskribent & Foodstylist">
+<meta name="keywords" content="Madskribent, Foodstylist, Mad, Food, Kogebøger">
+<meta name="author" content="Gitte Heidi">
+
+<title>Bestillinger: Gitte Heidi Madskribent & Foodstylist </title>
 	
+	<!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
+	
+	<!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+	
+<link rel="stylesheet" type="text/css" href="css/stylesheet2.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet_hf2.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
 
 </head>
 <body id="body">
@@ -36,26 +61,23 @@ $sql = "SELECT Bestil.idBestil, Bestil.fNavn, Bestil.eNavn, Bestil.email, Bestil
         }
 	
 	if(empty($_SESSION['idAdmin_user'])){
-		echo'Need to log in to see the secrets';
+		echo'Log ind for at se denne side';
 	}
 	else{
 		echo ' Velkommen til bestillinger ' .$_SESSION['navnAdmin_user']. '<br><br>';
 		
-	
 	while($stmt->fetch()){
 	?>	  
 	 
-    
-
-<!-- YOUR BOOKING -->
-<table class="bookings">
+   
+<table class="book">
   <tr>
-    <th>Titel</th>
-    <th>Fornavn</th>
-    <th>Efternavn</th>
-    <th>Email</th>
-    <th>Adresse</th>
-    <th>Antal</th>
+    <th width='150px'>Titel </th>
+    <th width='150px'>Fornavn </th>
+    <th width='150px'>Efternavn </th>
+    <th width='180px'>Email </th>
+    <th width='180px'>Adresse </th>
+    <th width='50px'>Antal </th>
  
   </tr>
 	<tr>
@@ -69,7 +91,8 @@ $sql = "SELECT Bestil.idBestil, Bestil.fNavn, Bestil.eNavn, Bestil.email, Bestil
     <td>
       <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
         <input type="hidden" value="<?=$idBestil?>" name="id">
-		  <button name="submit" type="submit" value="del">Delete</button>
+		  <button class="slet" width='50px' name="submit" type="submit" value="del"><i class="fa fa-1x fa-trash" aria-hidden="true"></i></button>
+		  <a class="edit" href="update.php?id=<?=$idBestil?>" ><i class="fa fa-1x fa-pencil" aria-hidden="true"></i></a>
         
       </form>
     </td>
@@ -79,7 +102,7 @@ $sql = "SELECT Bestil.idBestil, Bestil.fNavn, Bestil.eNavn, Bestil.email, Bestil
 
 
  <?php } 
-
+?> <button class="knappen" ><a href="logud.php">Log ud</a></button> <?php
 	}
 	
 

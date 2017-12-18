@@ -1,5 +1,23 @@
-<?php session_start();
+<?php
+// Initialize the session.
+// If you are using session_name("something"), don't forget it now!
+session_start();
 
+// Unset all of the session variables.
+$_SESSION = array();
+
+// If it's desired to kill the session, also delete the session cookie.
+// Note: This will destroy the session, and not just the session data!
+if (ini_get("session.use_cookies")) {
+    $params = session_get_cookie_params();
+    setcookie(session_name(), '', time() - 42000,
+        $params["path"], $params["domain"],
+        $params["secure"], $params["httponly"]
+    );
+}
+// når man logger ud bruger vi session til at den ikke forbliver logget ind ved at den fjerne log ind informationerne 
+// Finally, destroy the session.
+session_destroy();
 ?>
 <!doctype html>
 <html>
@@ -10,7 +28,7 @@
 <meta name="keywords" content="Madskribent, Foodstylist, Mad, Food, Kogebøger">
 <meta name="author" content="Gitte Heidi">
 
-<title>login: Gitte Heidi Madskribent & Foodstylist </title>
+<title>logud: Gitte Heidi Madskribent & Foodstylist </title>
 	
 	<!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -31,64 +49,10 @@
 	<link rel="stylesheet" type="text/css" href="css/stylesheet_hf2.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
 
+
 </head>
 
-<body class="logind">
-
-
-<?php 
-	if(filter_input(INPUT_POST, 'submit')){
-		
-	$navnAdmin_user = filter_input(INPUT_POST, 'navnAdmin_user')
-		or die('Missing/illegal navn parameter');
-		
-	$kode = filter_input(INPUT_POST, 'kode')
-		or die('Missing/illegal kode parameter');
-		
-	require_once('db_con.php');
-		
-	$sql= 'SELECT idAdmin_user, kodeAdmin_user FROM Admin_user WHERE navnAdmin_user=?';
-		
-	$stmt = $con->prepare($sql);
-		
-	$stmt->bind_param('s', $navnAdmin_user);
-		
-	$stmt->execute();
-		
-	$stmt->bind_result($idAdmin_user, $kodehash);
-	
-		
-	
-while($stmt->fetch()){		
-	}
-			
-		if(password_verify($kode, $kodehash)){
-			echo "<script>window.open('bestil.php','_self')</script>";
-			$_SESSION['idAdmin_user'] = $idAdmin_user;
-			$_SESSION['navnAdmin_user'] = $navnAdmin_user;
-		}
-		else{
-			echo 'illegal username/password combination' .$navnAdmin_user .$kode .$kodehash;
-		}}
-	
-	?>
-	
-	<div class="login">
-<form action="<?=$_SERVER['PHP_SELF']?>" method="post">
-
-
-		
-		<input type="text" name="navnAdmin_user"  placeholder="Brugernavn" required>
-			
-		<input type="password" name="kode" placeholder="Kode" required>
-		
-	
-		<input type='submit' id="send" value="log ind" name="submit">
-		
-	</div></div>
-		</div>
-	
-	</form>
-	</div>
+<body>
+Du er nu logget ud
 </body>
 </html>
