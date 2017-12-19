@@ -31,7 +31,7 @@
 	<link rel="stylesheet" type="text/css" href="css/stylesheet_hf2.css">
 
 <style>header.masthead{
-	background-image: url(img/Kaal.jpg);
+	background-image: ;
 }
 </style>	
 
@@ -39,7 +39,7 @@
 
 <body>
 	<?php
-	require('Header2.php');?>
+	require('header.php');?>
 	
 	
 	<?php

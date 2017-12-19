@@ -12,17 +12,18 @@ $fn = basename($_SERVER['PHP_SELF']);
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
+			  
             <li class="nav-item">
-				<a class="nav-link js-scroll-trigger" id="<?=($fn=='index2.php')?'selected':''?>"  href="index2.php">Forside</a>
+				<a class="nav-link js-scroll-trigger menu<?=($fn=='index2.php')?' selected':''?>"  href="index2.php">Forside</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" id="<?=($fn=='Ommig.php')?' selected': '' ?>" href="Ommig.php">Om mig</a>
+              <a class="nav-link js-scroll-trigger menu<?=($fn=='Ommig.php')?' selected': '' ?>" href="Ommig.php">Om mig</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" id="<?=($fn=='udgivelser.php')?' selected': '' ?>" href="udgivelser.php">Udgivelse</a>
+              <a class="nav-link js-scroll-trigger menu<?=($fn=='udgivelser.php')?' selected': '' ?>" href="udgivelser.php">Udgivelse</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" id="<?=($fn=='kontakt.php')?' selected': '' ?>" href="kontakt.php">Kontakt</a>
+              <a class="nav-link js-scroll-trigger menu<?=($fn=='kontakt.php')?' selected': '' ?>" href="kontakt.php">Kontakt</a>
             </li>
           </ul>
         </div>

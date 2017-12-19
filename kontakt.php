@@ -39,7 +39,7 @@
 
 <body>
 	<?php
-	require('Header2.php');?>
+	require('header.php');?>
 	
 	<section id="services">
       <div class="container">
@@ -281,6 +281,7 @@
       }
 		
     </script>
+	
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASY486mYqF4FycvmZuEzAlqv5RTbKl47Q&callback=initMap">
     </script> 

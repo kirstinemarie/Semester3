@@ -29,7 +29,7 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
 	
 <style>header.masthead{
-	background-image: url(img/kranse.jpg);
+	background-image: ;
 }
 	#selected{
 		border-bottom: solid 2px;
@@ -41,7 +41,7 @@
 
 <body>
 <?php
-	require('Header2.php');?>
+	require('header.php');?>
 	
           <div class="col-lg-12 text-center overtekst">
             <h2 class="section-heading">Om mig</h2>

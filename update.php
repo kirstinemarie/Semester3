@@ -33,6 +33,11 @@
 <body>
 	
 <?php
+	if(empty($_SESSION['idAdmin_user'])){
+		echo'Log ind for at se denne side';
+		die();
+	}
+	
 if($cmd = filter_input(INPUT_POST, 'cmd')){
 	if($cmd == 'update') {
 		$idBestil = filter_input(INPUT_POST, 'id', FILTER_VALIDATE_INT) 
@@ -67,11 +72,9 @@ if($cmd = filter_input(INPUT_POST, 'cmd')){
 		}	
 	}
 }
-?>
 
 
 
-<?php
 	if (empty($idBestil)){
 		$idBestil = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT) 
 			or die('Missing/illegal id parameter');	
